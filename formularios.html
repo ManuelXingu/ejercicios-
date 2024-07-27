@@ -1,0 +1,57 @@
+[10:50 p. m., 20/6/2024] +52 1 56 2981 4572: <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULARIOS</title>
+</head>
+<body>
+
+    <!--Formulario es un aherramienta que me permite recolectar informacion en la que mediante 
+    un boton de accio nviarla a una tabla, una base d edatos, una API-->
+ <form action="resultados.html"  method="get">
+<div>
+
+              <label for="user">Usuario</label>
+               <input name ="username" id="user">
+</div>
+    <br>
+<dib>
+                  <label for="user">Crreo</label>
+                 <input name="email" id="email">
+</dib>
+<dib>
+            <label for="user">Comentarios</label>
+            <input name ="Comentarios" id="Comentarios">
+ </dib>
+ <br>
+        <button type="submit">Guardar</button> 
+        <!--Enviar con la tecla enter-->
+        <button type="reset">Borrar</button> 
+        <!--Limpiar el formulario-->
+       </from>
+    
+   </body>
+</html>
+[10:50 p. m., 20/6/2024] +52 1 56 2981 4572: !DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Aqui se mostraran los resultados</p>
+    <dib id="resultados"></dib>
+    <br>
+    <a href="formularios.html">Volver al inicio del formulario</a>
+
+</body>
+<script>
+    const res = documen.getElemetById("resultados")
+    new URLSearchParams(window-location.search).forEach((val, name) => {
+    res.append('${name}; ${val}')
+    res.append(document.createElement('br'))
+})
+</script>
+</html>
